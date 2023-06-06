@@ -1,6 +1,6 @@
 let selectedLevel = null;
 function handleLevelSelection() {
-  const levelRadio = document.getElementsByName("level");
+  const levelRadio = document.querySelectorAll(".level");
 
   for (let i = 0; i < levelRadio.length; i++) {
     if (levelRadio[i].checked) {
@@ -9,8 +9,8 @@ function handleLevelSelection() {
     }
   }
 }
-const startButton = document.querySelector(".level__start");
-startButton.addEventListener("click", () => {
+const startButton = document.querySelector(".level__start-form");
+startButton.addEventListener("submit", () => {
   handleLevelSelection();
 
   if (selectedLevel !== null) {
