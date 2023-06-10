@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "StratosSkyeng";
-  src: url(../fonts/stratosskyengweb-regular.woff) format(woff),
-    url(../fonts/stratosskyengweb-regular.woff2) format(woff2);
+  src: url(../assets/fonts/stratosskyengweb-regular.woff) format(woff),
+    url(../assets/fonts/stratosskyengweb-regular.woff2) format(woff2);
   font-style: normal;
   font-weight: 400;
 }
@@ -85,3 +85,6 @@
 .level__toolbar label:hover {
   outline: 3px solid #0080c1;
 }
+
+@import "game-board";
+@import "mobile";
