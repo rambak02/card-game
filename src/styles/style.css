@@ -1,0 +1,337 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable selector-class-pattern */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "StratosSkyeng";
+    src: url("/assets/fonts/stratosskyengweb-regular.woff") format(woff),
+        url("/assets/fonts/stratosskyengweb-regular.woff2") format(woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004980;
+    width: 100vw;
+    height: 100vh;
+}
+
+.level__container {
+    width: 480px;
+    height: 460px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.level__title {
+    width: 208px;
+    height: 96px;
+    font-family: "StratosSkyeng";
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color: #004980;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.level__toolbar {
+    display: flex;
+    gap: 24px;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080c1;
+}
+
+.level__start {
+    color: #fff;
+    background: #7ac100;
+    border-radius: 12px;
+    min-height: 50px;
+    min-width: 248px;
+    font-size: 24px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.level__start:hover {
+    background-color: #6daa03;
+}
+
+.level__toolbar input[type="radio"] {
+    display: none;
+}
+
+.level__toolbar label {
+    font-family: "StratosSkyeng";
+    display: inline-block;
+    padding: 20px 40px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.level__toolbar input[type="radio"]:checked + label {
+    outline: 3px solid #0080c1;
+}
+
+.level__toolbar label:hover {
+    outline: 3px solid #0080c1;
+}
+
+body {
+    background-color: #004980;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer {
+    margin-top: -14px;
+    color: #fff;
+    font-family: "StratosSkyeng";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.timer__min {
+    padding-left: 38px;
+}
+
+.timer__sek {
+    padding-right: 5px;
+}
+
+.timer__container {
+    margin-top: 20px;
+}
+
+.timer__header {
+    color: #fff;
+    font-family: "StratosSkyeng";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.restart-btn {
+    display: flex;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 246px;
+    justify-content: center;
+    align-items: center;
+    font-family: "StratosSkyeng";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    height: 50px;
+    background: #7ac100;
+    border-radius: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: 60vw;
+    height: 80vh;
+}
+
+.card {
+    cursor: pointer;
+    min-width: 110px;
+    height: 150px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url("../../assets/img/cart-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.a-spades {
+    background-image: url("../../assets/img/a-spades.png");
+}
+
+.k-spades {
+    background-image: url("../../assets/img/король пики.png");
+}
+
+.q-spades {
+    background-image: url("../../assets/img/дама пики.png");
+}
+
+.j-spades {
+    background-image: url("../../assets/img/валет пики.png");
+}
+
+.ten-spades {
+    background-image: url("../../assets/img/10 пики.png");
+}
+
+.nine-spades {
+    background-image: url("../../assets/img/9 пики.png");
+}
+
+.eight-spades {
+    background-image: url("../../assets/img/8 пики.png");
+}
+
+.seven-spades {
+    background-image: url("../../assets/img/7 пики.png");
+}
+
+.six-spades {
+    background-image: url("../../assets/img/6 пики.png");
+}
+
+.a-hearts {
+    background-image: url("../../assets/img/туз черви.png");
+}
+
+.k-hearts {
+    background-image: url("../../assets/img/король черви.png");
+}
+
+.q-hearts {
+    background-image: url("../../assets/img/дама черви.png");
+}
+
+.j-hearts {
+    background-image: url("../../assets/img/валет черви.png");
+}
+
+.ten-hearts {
+    background-image: url("../../assets/img/10 черви.png");
+}
+
+.nine-hearts {
+    background-image: url("../../assets/img/9 черви.png");
+}
+
+.eight-hearts {
+    background-image: url("../../assets/img/8 черви.png");
+}
+
+.seven-hearts {
+    background-image: url("../../assets/img/7 черви.png");
+}
+
+.six-hearts {
+    background-image: url("../../assets/img/6 черви.png");
+}
+
+.a-diamonds {
+    background-image: url("../../assets/img/туз бубны.png");
+}
+
+.k-diamonds {
+    background-image: url("../../assets/img/король бубны.png");
+}
+
+.q-diamonds {
+    background-image: url("../../assets/img/дама бубны.png");
+}
+
+.j-diamonds {
+    background-image: url("../../assets/img/валет бубны.png");
+}
+
+.ten-diamonds {
+    background-image: url("../../assets/img/10 бубны.png");
+}
+
+.nine-diamonds {
+    background-image: url("../../assets/img/9 бубны.png");
+}
+
+.eight-diamonds {
+    background-image: url("../../assets/img/8 бубны.png");
+}
+
+.seven-diamonds {
+    background-image: url("../../assets/img/7 бубны.png");
+}
+
+.six-diamonds {
+    background-image: url("../../assets/img/6 бубны.png");
+}
+
+.a-clubs {
+    background-image: url("../../assets/img/туз крести.png");
+}
+
+.k-clubs {
+    background-image: url("../../assets/img/король крести.png");
+}
+
+.q-clubs {
+    background-image: url("../../assets/img/дама крести.png");
+}
+
+.j-clubs {
+    background-image: url("../../assets/img/валет крести.png");
+}
+
+.ten-clubs {
+    background-image: url("../../assets/img/10 крести.png");
+}
+
+.nine-clubs {
+    background-image: url("../../assets/img/9 крести.png");
+}
+
+.eight-clubs {
+    background-image: url("../../assets/img/8 крести.png");
+}
+
+.seven-clubs {
+    background-image: url("../../assets/img/7 крести.png");
+}
+
+.six-clubs {
+    background-image: url("../../assets/img/6 крести.png");
+}
+
+.close {
+    background-image: url("../../assets/img/cart-back.png");
+}
+
+@media (width <= 1024px) {
+    .grid {
+        width: 90vw;
+    }
+}

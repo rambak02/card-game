@@ -1,13 +1,14 @@
 {
     "name": "cart-games",
     "version": "1.0.0",
-    "description": "cart game js",
-    "main": "index.js",
+    "description": "card game js",
+    "main": "./src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "http-server -p 3004",
-        "format": "prettier --write index.js",
-        "lint:js": "eslint *.js",
+        "build": "webpack",
+        "start": "webpack-dev-server --open",
+        "format": "prettier --write ./src/index.js",
+        "lint:js": "eslint ./*.js",
         "lint:css": "stylelint ./**/*.css",
         "lint": "npm run lint:js && npm run lint:css",
         "prepare": "husky install"
@@ -19,16 +20,27 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.8.1",
+        "css-minimizer-webpack-plugin": "^5.0.1",
         "eslint": "^8.42.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^4.2.1",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.3",
         "husky": "^8.0.3",
+        "mini-css-extract-plugin": "^2.7.6",
         "prettier": "^2.8.8",
         "stylelint": "^15.7.0",
         "stylelint-config-standard": "^33.0.0",
-        "stylelint-prettier": "^3.0.0"
+        "stylelint-prettier": "^3.0.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
     },
     "dependencies": {
-        "http-server": "^14.1.1"
+        "http-server": "^14.1.1",
+        "node-sass": "^9.0.0",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3"
     }
 }

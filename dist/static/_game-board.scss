@@ -74,7 +74,7 @@ body {
 
 .card {
     cursor: pointer;
-    max-width: 110px;
+    min-width: 110px;
     height: 150px;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
@@ -120,39 +120,39 @@ body {
     background-image: url("../assets/img/6\ пики.png");
 }
 
-.a-hearths {
+.a-hearts {
     background-image: url("../assets/img/туз черви.png");
 }
 
-.k-hearths {
+.k-hearts {
     background-image: url("../assets/img/король черви.png");
 }
 
-.q-hearths {
+.q-hearts {
     background-image: url("../assets/img/дама черви.png");
 }
 
-.j-hearths {
+.j-hearts {
     background-image: url("../assets/img/валет черви.png");
 }
 
-.ten-hearths {
+.ten-hearts {
     background-image: url("../assets/img/10\ черви.png");
 }
 
-.nine-hearths {
+.nine-hearts {
     background-image: url("../assets/img/9\ черви.png");
 }
 
-.eight-hearths {
+.eight-hearts {
     background-image: url("../assets/img/8\ черви.png");
 }
 
-.seven-hearths {
+.seven-hearts {
     background-image: url("../assets/img/7\ черви.png");
 }
 
-.six-hearths {
+.six-hearts {
     background-image: url("../assets/img/6\ черви.png");
 }
 
