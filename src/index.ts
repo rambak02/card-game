@@ -1,5 +1,5 @@
 import "/src/styles/style.css";
-import { renderBoard } from "./game.js";
+import { renderBoard } from "./game";
 const cardClassesLv3 = [
     "a-spades",
     "k-spades",
@@ -97,17 +97,17 @@ const cardClassesLv1 = [
     "six-hearts",
 ];
 
-let selectedLevel = null;
-let cardClasses = [];
-let openedCards = [];
-const cardContainer = document.querySelector(".grid");
+let selectedLevel: number = 0;
+let cardClasses: string[] = [];
+let openedCards: HTMLElement[] = [];
+const cardContainer = document.querySelector<HTMLElement>(".grid");
 
 function handleLevelSelection() {
-    const levelRadio = document.querySelectorAll(".level");
+    const levelRadio = document.querySelectorAll<HTMLInputElement>(".level");
 
     for (let i = 0; i < levelRadio.length; i++) {
         if (levelRadio[i].checked) {
-            selectedLevel = parseInt(levelRadio[i].value);
+            selectedLevel = Number(levelRadio[i].value);
 
             break;
         }
@@ -125,7 +125,7 @@ startButton?.addEventListener("submit", () => {
     }
 });
 document.addEventListener("DOMContentLoaded", () => {
-    selectedLevel = localStorage.getItem("selectedLevel");
+    selectedLevel = Number(localStorage.getItem("selectedLevel"));
 
     if (selectedLevel == 1) {
         cardClasses = cardClassesLv1;
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         closeCards();
     }, 5000);
     cardContainer?.addEventListener("click", (event) => {
-        const card = event.target;
+        const card = event.target as HTMLElement;
         if (
             card.classList.contains("card") &&
             !card.classList.contains("open")
@@ -162,7 +162,7 @@ const closeCards = () => {
     openedCards = [];
 };
 
-const openCard = (card) => {
+const openCard = (card: HTMLElement ) => {
     card.classList.remove("close");
     openedCards.push(card);
 };

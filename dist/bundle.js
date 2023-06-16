@@ -14,9 +14,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/game.js":
+/***/ "./src/game.ts":
 /*!*********************!*\
-  !*** ./src/game.js ***!
+  !*** ./src/game.ts ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -24,22 +24,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   renderBoard: () => (/* binding */ renderBoard)
 /* harmony export */ });
-const shuffle = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+var shuffle = function (array) {
+    var _a;
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        _a = [array[j], array[i]], array[i] = _a[0], array[j] = _a[1];
     }
     return array;
 };
-const renderBoard = (cardClasses) => {
-    const shuffledCard = shuffle(cardClasses);
-    const cardContainer = document.querySelector(".grid");
+var renderBoard = function (cardClasses) {
+    var shuffledCard = shuffle(cardClasses);
+    var cardContainer = document.querySelector(".grid");
     if (cardContainer !== null) {
         cardContainer.innerHTML = shuffledCard
-            .map((card) => {
-                const suit = card.split("-")[1];
-                return `<div  class ="card ${card}" data-suit ="${suit}"></div>`;
-            })
+            .map(function (card) {
+            var suit = card.split("-")[1];
+            return "<div  class =\"card ".concat(card, "\" data-suit =\"").concat(suit, "\"></div>");
+        })
             .join("");
     }
 };
@@ -107,14 +108,14 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/index.ts ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../src/styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _game_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./game.js */ "./src/game.js");
+/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./game */ "./src/game.ts");
 
 
-const cardClassesLv3 = [
+var cardClassesLv3 = [
     "a-spades",
     "k-spades",
     "q-spades",
@@ -152,7 +153,7 @@ const cardClassesLv3 = [
     "seven-clubs",
     "six-clubs",
 ];
-const cardClassesLv2 = [
+var cardClassesLv2 = [
     "a-spades",
     "k-spades",
     "q-spades",
@@ -190,7 +191,7 @@ const cardClassesLv2 = [
     "seven-clubs",
     "six-clubs",
 ];
-const cardClassesLv1 = [
+var cardClassesLv1 = [
     "a-spades",
     "k-spades",
     "q-spades",
@@ -210,37 +211,29 @@ const cardClassesLv1 = [
     "seven-hearts",
     "six-hearts",
 ];
-
-let selectedLevel = null;
-let cardClasses = [];
-let openedCards = [];
-const cardContainer = document.querySelector(".grid");
-
+var selectedLevel = 0;
+var cardClasses = [];
+var openedCards = [];
+var cardContainer = document.querySelector(".grid");
 function handleLevelSelection() {
-    const levelRadio = document.querySelectorAll(".level");
-
-    for (let i = 0; i < levelRadio.length; i++) {
+    var levelRadio = document.querySelectorAll(".level");
+    for (var i = 0; i < levelRadio.length; i++) {
         if (levelRadio[i].checked) {
-            selectedLevel = parseInt(levelRadio[i].value);
-
+            selectedLevel = Number(levelRadio[i].value);
             break;
         }
     }
 }
-const startButton = document.querySelector(".level__start-form");
-
-startButton?.addEventListener("submit", () => {
+var startButton = document.querySelector(".level__start-form");
+startButton === null || startButton === void 0 ? void 0 : startButton.addEventListener("submit", function () {
     handleLevelSelection();
-
     if (selectedLevel !== null) {
         localStorage.setItem("selectedLevel", String(selectedLevel));
-
         window.location.assign("game-board.html");
     }
 });
-document.addEventListener("DOMContentLoaded", () => {
-    selectedLevel = localStorage.getItem("selectedLevel");
-
+document.addEventListener("DOMContentLoaded", function () {
+    selectedLevel = Number(localStorage.getItem("selectedLevel"));
     if (selectedLevel == 1) {
         cardClasses = cardClassesLv1;
     }
@@ -250,45 +243,40 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selectedLevel == 3) {
         cardClasses = cardClassesLv3;
     }
-
-    (0,_game_js__WEBPACK_IMPORTED_MODULE_1__.renderBoard)(cardClasses);
-    setTimeout(() => {
+    (0,_game__WEBPACK_IMPORTED_MODULE_1__.renderBoard)(cardClasses);
+    setTimeout(function () {
         closeCards();
     }, 5000);
-    cardContainer?.addEventListener("click", (event) => {
-        const card = event.target;
-        if (
-            card.classList.contains("card") &&
-            !card.classList.contains("open")
-        ) {
+    cardContainer === null || cardContainer === void 0 ? void 0 : cardContainer.addEventListener("click", function (event) {
+        var card = event.target;
+        if (card.classList.contains("card") &&
+            !card.classList.contains("open")) {
             openCard(card);
             checkMatch();
         }
     });
 });
-
-const closeCards = () => {
-    let cardsElement = document.querySelectorAll(".card");
-    cardsElement.forEach((card) => {
+var closeCards = function () {
+    var cardsElement = document.querySelectorAll(".card");
+    cardsElement.forEach(function (card) {
         card.classList.add("close");
     });
-
     openedCards = [];
 };
-
-const openCard = (card) => {
+var openCard = function (card) {
     card.classList.remove("close");
     openedCards.push(card);
 };
-const checkMatch = () => {
+var checkMatch = function () {
     if (openedCards.length === 2) {
-        const [firstCard, secondCard] = openedCards;
+        var firstCard = openedCards[0], secondCard = openedCards[1];
         if (firstCard.dataset.suit === secondCard.dataset.suit) {
-            setTimeout(() => {
+            setTimeout(function () {
                 alert("Вы победили");
             }, 400);
-        } else {
-            setTimeout(() => {
+        }
+        else {
+            setTimeout(function () {
                 alert("Вы проиграли");
             }, 400);
         }
