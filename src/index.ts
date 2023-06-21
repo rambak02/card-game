@@ -1,5 +1,7 @@
 import "/src/styles/style.css";
 import { renderBoard } from "./game";
+import { startTimer, stopTimer } from "./timer";
+import { showGameOverScreen, showGameLoseScreen } from "./showGameScreen";
 const cardClassesLv3 = [
     "a-spades",
     "k-spades",
@@ -66,15 +68,6 @@ const cardClassesLv2 = [
     "eight-diamonds",
     "seven-diamonds",
     "six-diamonds",
-    "a-clubs",
-    "k-clubs",
-    "q-clubs",
-    "j-clubs",
-    "ten-clubs",
-    "nine-clubs",
-    "eight-clubs",
-    "seven-clubs",
-    "six-clubs",
 ];
 const cardClassesLv1 = [
     "a-spades",
@@ -100,6 +93,8 @@ const cardClassesLv1 = [
 let selectedLevel: number = 0;
 let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
+let elapsedTime: number = 0;
+let startTime: number = 0;
 const cardContainer = document.querySelector<HTMLElement>(".grid");
 
 function handleLevelSelection() {
@@ -140,7 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
     renderBoard(cardClasses);
     setTimeout(() => {
         closeCards();
+        let timerElement = document.querySelector(".timer") as HTMLElement;
+
+        startTimer(startTime, elapsedTime, timerElement);
     }, 5000);
+
     cardContainer?.addEventListener("click", (event) => {
         const card = event.target as HTMLElement;
         if (
@@ -148,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
             !card.classList.contains("open")
         ) {
             openCard(card);
-            checkMatch();
+            checkMatch(startTime, elapsedTime);
         }
     });
 });
@@ -162,21 +161,43 @@ const closeCards = () => {
     openedCards = [];
 };
 
-const openCard = (card: HTMLElement ) => {
+const openCard = (card: HTMLElement) => {
     card.classList.remove("close");
     openedCards.push(card);
 };
-const checkMatch = () => {
+const checkMatch = (startTime: number, elapsedTime: number) => {
     if (openedCards.length === 2) {
         const [firstCard, secondCard] = openedCards;
         if (firstCard.dataset.suit === secondCard.dataset.suit) {
             setTimeout(() => {
-                alert("Вы победили");
+                stopTimer();
+               
             }, 400);
+            const winTimerElement = document.getElementById(
+                "timer"
+            ) as HTMLElement;
+            const gameOverlayElement = document.querySelector(".game-overlay") as HTMLElement
+            showGameOverScreen(winTimerElement, "Вы выиграли!", "game-over-screen", gameOverlayElement  )
+            const gameRestartButton = document.querySelector(".game-over__btn")
+            gameRestartButton?.addEventListener("click", () => {
+                window.location.assign("index.html");
+                selectedLevel = 0;
+            })
         } else {
+            
             setTimeout(() => {
-                alert("Вы проиграли");
+                stopTimer();
             }, 400);
+                const loseTimerElement = document.getElementById(
+                    "timer"
+                ) as HTMLElement;
+                const gameOverlayElement = document.querySelector(".game-overlay") as HTMLElement
+                showGameLoseScreen(loseTimerElement, "Вы проиграли!", "game-over-screen", gameOverlayElement  )
+                const gameRestartButton = document.querySelector(".game-over__btn")
+                gameRestartButton?.addEventListener("click", () => {
+                    window.location.assign("index.html");
+                    selectedLevel = 0;
+                })
         }
     }
 };

@@ -46,6 +46,77 @@ var renderBoard = function (cardClasses) {
 };
 
 
+/***/ }),
+
+/***/ "./src/showGameScreen.ts":
+/*!*******************************!*\
+  !*** ./src/showGameScreen.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   showGameLoseScreen: () => (/* binding */ showGameLoseScreen),
+/* harmony export */   showGameOverScreen: () => (/* binding */ showGameOverScreen)
+/* harmony export */ });
+function showGameOverScreen(timerElement, text, classElement, gameOverlayElement) {
+    var gameOverScreen = document.createElement("div");
+    gameOverScreen.className = classElement;
+    gameOverScreen.innerHTML = " <div class=\"game-over__win\"></div>       \n   <div class=\"game-over__title\"> ".concat(text, "</div>\n   <div class=\"game-over__time__title\">\u0417\u0430\u0442\u0440\u0430\u0447\u0435\u043D\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F:</div>\n   <div class=\"game-over__time\"> ").concat(timerElement.textContent, "</div>\n   <button class=\"game-over__btn restart-btn\">\u041D\u0430\u0447\u0430\u0442\u044C \u0437\u0430\u043D\u043E\u0432\u043E</button>");
+    gameOverlayElement === null || gameOverlayElement === void 0 ? void 0 : gameOverlayElement.appendChild(gameOverScreen);
+    gameOverlayElement === null || gameOverlayElement === void 0 ? void 0 : gameOverlayElement.classList.add("show");
+}
+function showGameLoseScreen(timerElement, text, classElement, gameOverlayElement) {
+    var gameOverScreen = document.createElement("div");
+    gameOverScreen.className = classElement;
+    gameOverScreen.innerHTML = "\n   <div class=\"game-over__lose\"></div>       \n   <div class=\"game-over__title\"> ".concat(text, "</div>\n   <div class=\"game-over__time__title\">\u0417\u0430\u0442\u0440\u0430\u0447\u0435\u043D\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F:</div>\n   <h1 class=\"game-over__time\"> ").concat(timerElement.textContent, "</h1>\n   <button class=\"game-over__btn restart-btn\">\u041D\u0430\u0447\u0430\u0442\u044C \u0437\u0430\u043D\u043E\u0432\u043E</button>");
+    gameOverlayElement === null || gameOverlayElement === void 0 ? void 0 : gameOverlayElement.appendChild(gameOverScreen);
+    gameOverlayElement === null || gameOverlayElement === void 0 ? void 0 : gameOverlayElement.classList.add("show");
+}
+
+
+/***/ }),
+
+/***/ "./src/timer.ts":
+/*!**********************!*\
+  !*** ./src/timer.ts ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   startTimer: () => (/* binding */ startTimer),
+/* harmony export */   stopTimer: () => (/* binding */ stopTimer)
+/* harmony export */ });
+var intervalTimer = null;
+function timerFormat(time) {
+    var minutes = Math.floor(time / 60)
+        .toString()
+        .padStart(2, "0");
+    var seconds = (time % 60).toString().padStart(2, "0");
+    return "".concat(minutes, ":").concat(seconds);
+}
+function renderTimer(startTime, elapsedTime, element) {
+    var currentTime = Math.floor((Date.now() - startTime) / 1000);
+    elapsedTime = currentTime;
+    if (element !== null) {
+        element.textContent = timerFormat(elapsedTime);
+    }
+}
+function startTimer(startTime, elapsedTime, element) {
+    startTime = Date.now();
+    renderTimer(startTime, elapsedTime, element);
+    intervalTimer = setInterval(function () {
+        renderTimer(startTime, elapsedTime, element);
+    }, 1000);
+}
+function stopTimer() {
+    if (intervalTimer) {
+        clearInterval(intervalTimer);
+    }
+}
+
+
 /***/ })
 
 /******/ 	});
@@ -113,6 +184,10 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../src/styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./game */ "./src/game.ts");
+/* harmony import */ var _timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./timer */ "./src/timer.ts");
+/* harmony import */ var _showGameScreen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./showGameScreen */ "./src/showGameScreen.ts");
+
+
 
 
 var cardClassesLv3 = [
@@ -181,15 +256,6 @@ var cardClassesLv2 = [
     "eight-diamonds",
     "seven-diamonds",
     "six-diamonds",
-    "a-clubs",
-    "k-clubs",
-    "q-clubs",
-    "j-clubs",
-    "ten-clubs",
-    "nine-clubs",
-    "eight-clubs",
-    "seven-clubs",
-    "six-clubs",
 ];
 var cardClassesLv1 = [
     "a-spades",
@@ -214,6 +280,8 @@ var cardClassesLv1 = [
 var selectedLevel = 0;
 var cardClasses = [];
 var openedCards = [];
+var elapsedTime = 0;
+var startTime = 0;
 var cardContainer = document.querySelector(".grid");
 function handleLevelSelection() {
     var levelRadio = document.querySelectorAll(".level");
@@ -246,13 +314,15 @@ document.addEventListener("DOMContentLoaded", function () {
     (0,_game__WEBPACK_IMPORTED_MODULE_1__.renderBoard)(cardClasses);
     setTimeout(function () {
         closeCards();
+        var timerElement = document.querySelector(".timer");
+        (0,_timer__WEBPACK_IMPORTED_MODULE_2__.startTimer)(startTime, elapsedTime, timerElement);
     }, 5000);
     cardContainer === null || cardContainer === void 0 ? void 0 : cardContainer.addEventListener("click", function (event) {
         var card = event.target;
         if (card.classList.contains("card") &&
             !card.classList.contains("open")) {
             openCard(card);
-            checkMatch();
+            checkMatch(startTime, elapsedTime);
         }
     });
 });
@@ -267,18 +337,24 @@ var openCard = function (card) {
     card.classList.remove("close");
     openedCards.push(card);
 };
-var checkMatch = function () {
+var checkMatch = function (startTime, elapsedTime) {
     if (openedCards.length === 2) {
         var firstCard = openedCards[0], secondCard = openedCards[1];
         if (firstCard.dataset.suit === secondCard.dataset.suit) {
             setTimeout(function () {
-                alert("Вы победили");
+                (0,_timer__WEBPACK_IMPORTED_MODULE_2__.stopTimer)();
             }, 400);
+            var winTimerElement = document.getElementById("timer");
+            var gameOverlayElement = document.querySelector(".game-overlay");
+            (0,_showGameScreen__WEBPACK_IMPORTED_MODULE_3__.showGameOverScreen)(winTimerElement, "Вы выиграли!", "game-over-screen", gameOverlayElement);
         }
         else {
             setTimeout(function () {
-                alert("Вы проиграли");
+                (0,_timer__WEBPACK_IMPORTED_MODULE_2__.stopTimer)();
             }, 400);
+            var loseTimerElement = document.getElementById("timer");
+            var gameOverlayElement = document.querySelector(".game-overlay");
+            (0,_showGameScreen__WEBPACK_IMPORTED_MODULE_3__.showGameLoseScreen)(loseTimerElement, "Вы проиграли!", "game-over-screen", gameOverlayElement);
         }
     }
 };
