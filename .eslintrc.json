@@ -7,10 +7,12 @@
     "extends": ["eslint:recommended", "prettier"],
     "plugins": ["prettier"],
     "parserOptions": {
+        "sourceType": "module",
         "ecmaVersion": 2020
     },
     "rules": {
-        "prettier/prettier": "error",
+        "semi": 1,
+        "prettier/prettier": ["error"],
         "camelcase": ["error"]
     }
 }
