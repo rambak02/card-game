@@ -67,8 +67,8 @@ body {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
-    margin: 20px auto;
-    width: 60vw;
+    margin: auto;
+    width: 70vw;
     height: 80vh;
 }
 
@@ -79,155 +79,155 @@ body {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-image: url("../assets/img/cart-back.png");
+    background-image: url("../../assets/img/cart-back.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .a-spades {
-    background-image: url("../assets/img/a-spades.png");
+    background-image: url("../../assets/img/a-spades.png");
 }
 
 .k-spades {
-    background-image: url("../assets/img/король пики.png");
+    background-image: url("../../assets/img/король пики.png");
 }
 
 .q-spades {
-    background-image: url("../assets/img/дама пики.png");
+    background-image: url("../../assets/img/дама пики.png");
 }
 
 .j-spades {
-    background-image: url("../assets/img/валет пики.png");
+    background-image: url("../../assets/img/валет пики.png");
 }
 
 .ten-spades {
-    background-image: url("../assets/img/10\ пики.png");
+    background-image: url("../../assets/img/10\ пики.png");
 }
 
 .nine-spades {
-    background-image: url("../assets/img/9\ пики.png");
+    background-image: url("../../assets/img/9\ пики.png");
 }
 
 .eight-spades {
-    background-image: url("../assets/img/8\ пики.png");
+    background-image: url("../../assets/img/8\ пики.png");
 }
 
 .seven-spades {
-    background-image: url("../assets/img/7\ пики.png");
+    background-image: url("../../assets/img/7\ пики.png");
 }
 
 .six-spades {
-    background-image: url("../assets/img/6\ пики.png");
+    background-image: url("../../assets/img/6\ пики.png");
 }
 
 .a-hearts {
-    background-image: url("../assets/img/туз черви.png");
+    background-image: url("../../assets/img/туз черви.png");
 }
 
 .k-hearts {
-    background-image: url("../assets/img/король черви.png");
+    background-image: url("../../assets/img/король черви.png");
 }
 
 .q-hearts {
-    background-image: url("../assets/img/дама черви.png");
+    background-image: url("../../assets/img/дама черви.png");
 }
 
 .j-hearts {
-    background-image: url("../assets/img/валет черви.png");
+    background-image: url("../../assets/img/валет черви.png");
 }
 
 .ten-hearts {
-    background-image: url("../assets/img/10\ черви.png");
+    background-image: url("../../assets/img/10\ черви.png");
 }
 
 .nine-hearts {
-    background-image: url("../assets/img/9\ черви.png");
+    background-image: url("../../assets/img/9\ черви.png");
 }
 
 .eight-hearts {
-    background-image: url("../assets/img/8\ черви.png");
+    background-image: url("../../assets/img/8\ черви.png");
 }
 
 .seven-hearts {
-    background-image: url("../assets/img/7\ черви.png");
+    background-image: url("../../assets/img/7\ черви.png");
 }
 
 .six-hearts {
-    background-image: url("../assets/img/6\ черви.png");
+    background-image: url("../../assets/img/6\ черви.png");
 }
 
 .a-diamonds {
-    background-image: url("../assets/img/туз бубны.png");
+    background-image: url("../../assets/img/туз бубны.png");
 }
 
 .k-diamonds {
-    background-image: url("../assets/img/король бубны.png");
+    background-image: url("../../assets/img/король бубны.png");
 }
 
 .q-diamonds {
-    background-image: url("../assets/img/дама бубны.png");
+    background-image: url("../../assets/img/дама бубны.png");
 }
 
 .j-diamonds {
-    background-image: url("../assets/img/валет бубны.png");
+    background-image: url("../../assets/img/валет бубны.png");
 }
 
 .ten-diamonds {
-    background-image: url("../assets/img/10\ бубны.png");
+    background-image: url("../../assets/img/10\ бубны.png");
 }
 
 .nine-diamonds {
-    background-image: url("../assets/img/9\ бубны.png");
+    background-image: url("../../assets/img/9\ бубны.png");
 }
 
 .eight-diamonds {
-    background-image: url("../assets/img/8\ бубны.png");
+    background-image: url("../../assets/img/8\ бубны.png");
 }
 
 .seven-diamonds {
-    background-image: url("../assets/img/7\ бубны.png");
+    background-image: url("../../assets/img/7\ бубны.png");
 }
 
 .six-diamonds {
-    background-image: url("../assets/img/6\ бубны.png");
+    background-image: url("../../assets/img/6\ бубны.png");
 }
 
 .a-clubs {
-    background-image: url("../assets/img/туз крести.png");
+    background-image: url("../../assets/img/туз крести.png");
 }
 
 .k-clubs {
-    background-image: url("../assets/img/король крести.png");
+    background-image: url("../../assets/img/король крести.png");
 }
 
 .q-clubs {
-    background-image: url("../assets/img/дама крести.png");
+    background-image: url("../../assets/img/дама крести.png");
 }
 
 .j-clubs {
-    background-image: url("../assets/img/валет крести.png");
+    background-image: url("../../assets/img/валет крести.png");
 }
 
 .ten-clubs {
-    background-image: url("../assets/img/10\ крести.png");
+    background-image: url("../../assets/img/10\ крести.png");
 }
 
 .nine-clubs {
-    background-image: url("../assets/img/9\ крести.png");
+    background-image: url("../../assets/img/9\ крести.png");
 }
 
 .eight-clubs {
-    background-image: url("../assets/img/8\ крести.png");
+    background-image: url("../../assets/img/8\ крести.png");
 }
 
 .seven-clubs {
-    background-image: url("../assets/img/7\ крести.png");
+    background-image: url("../../assets/img/7\ крести.png");
 }
 
 .six-clubs {
-    background-image: url("../assets/img/6\ крести.png");
+    background-image: url("../../assets/img/6\ крести.png");
 }
 
 .close {
-    background-image: url("../assets/img/cart-back.png");
+    background-image: url("../../assets/img/cart-back.png");
 }

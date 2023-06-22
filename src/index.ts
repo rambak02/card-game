@@ -1,95 +1,9 @@
-import "/src/styles/style.css";
-import { renderBoard } from "./game";
+import "./styles/style.scss";
+import { renderBoard, generateCards } from "./game";
 import { startTimer, stopTimer } from "./timer";
 import { showGameOverScreen, showGameLoseScreen } from "./showGameScreen";
-const cardClassesLv3 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-    "a-diamonds",
-    "k-diamonds",
-    "q-diamonds",
-    "j-diamonds",
-    "ten-diamonds",
-    "nine-diamonds",
-    "eight-diamonds",
-    "seven-diamonds",
-    "six-diamonds",
-    "a-clubs",
-    "k-clubs",
-    "q-clubs",
-    "j-clubs",
-    "ten-clubs",
-    "nine-clubs",
-    "eight-clubs",
-    "seven-clubs",
-    "six-clubs",
-];
-const cardClassesLv2 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-    "a-diamonds",
-    "k-diamonds",
-    "q-diamonds",
-    "j-diamonds",
-    "ten-diamonds",
-    "nine-diamonds",
-    "eight-diamonds",
-    "seven-diamonds",
-    "six-diamonds",
-];
-const cardClassesLv1 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-];
-
+const rankArray = ["a", "k", "q", "j", "ten", "nine", "eight", "seven", "six"];
+const suitArray = ["spades", "hearts", "diamonds", "clubs"];
 let selectedLevel: number = 0;
 let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
@@ -121,15 +35,18 @@ startButton?.addEventListener("submit", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
     selectedLevel = Number(localStorage.getItem("selectedLevel"));
-
-    if (selectedLevel == 1) {
-        cardClasses = cardClassesLv1;
+    let numCards = 0;
+    if (selectedLevel ==1) {
+        numCards = 18;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
     if (selectedLevel == 2) {
-        cardClasses = cardClassesLv2;
+        numCards = 27;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
     if (selectedLevel == 3) {
-        cardClasses = cardClassesLv3;
+        numCards = 36;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
 
     renderBoard(cardClasses);

@@ -1,8 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 module.exports = {
@@ -22,15 +22,12 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-            },
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                use: ["style-loader", "css-loader", 'resolve-url-loader', "sass-loader"],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
+               
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -44,7 +41,7 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: 
-                 [{ from:  "src/styles", to: "static" }],
+                 [{ from:  "assets", to: "static" }],
         }),
         new HtmlWebpackPlugin({
             filename: "game-board.html",
@@ -53,10 +50,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./index.html",
         }),
-        new MiniCssExtractPlugin(),
+        // new MiniCssExtractPlugin({
+        //     filename: "style.css"
+        // }),
     ],
-    optimization: {
-        minimizer: ["...", new CssMinimizerPlugin()],
-    },
+    // optimization: {
+    //     minimizer: ["...", new CssMinimizerPlugin()],
+    // },
     devtool: isProduction ? "hidden-source-map" : "source-map",
 };
