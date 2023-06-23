@@ -6,7 +6,7 @@ rules:
   selector-class-pattern: "^[a-z0-9_\\-]+$"
   font-family-no-missing-generic-family-keyword: null
   no-invalid-position-at-import-rule: null
-  import-notation: "url"
+
 
  
  
