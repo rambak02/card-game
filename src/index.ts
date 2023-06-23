@@ -1,105 +1,14 @@
-import "/src/styles/style.css";
-import { renderBoard } from "./game";
-const cardClassesLv3 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-    "a-diamonds",
-    "k-diamonds",
-    "q-diamonds",
-    "j-diamonds",
-    "ten-diamonds",
-    "nine-diamonds",
-    "eight-diamonds",
-    "seven-diamonds",
-    "six-diamonds",
-    "a-clubs",
-    "k-clubs",
-    "q-clubs",
-    "j-clubs",
-    "ten-clubs",
-    "nine-clubs",
-    "eight-clubs",
-    "seven-clubs",
-    "six-clubs",
-];
-const cardClassesLv2 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-    "a-diamonds",
-    "k-diamonds",
-    "q-diamonds",
-    "j-diamonds",
-    "ten-diamonds",
-    "nine-diamonds",
-    "eight-diamonds",
-    "seven-diamonds",
-    "six-diamonds",
-    "a-clubs",
-    "k-clubs",
-    "q-clubs",
-    "j-clubs",
-    "ten-clubs",
-    "nine-clubs",
-    "eight-clubs",
-    "seven-clubs",
-    "six-clubs",
-];
-const cardClassesLv1 = [
-    "a-spades",
-    "k-spades",
-    "q-spades",
-    "j-spades",
-    "ten-spades",
-    "nine-spades",
-    "eight-spades",
-    "seven-spades",
-    "six-spades",
-    "a-hearts",
-    "k-hearts",
-    "q-hearts",
-    "j-hearts",
-    "ten-hearts",
-    "nine-hearts",
-    "eight-hearts",
-    "seven-hearts",
-    "six-hearts",
-];
-
+import "./styles/style.scss";
+import { renderBoard, generateCards } from "./game";
+import { startTimer, stopTimer } from "./timer";
+import { showGameOverScreen, showGameLoseScreen } from "./showGameScreen";
+const rankArray = ["a", "k", "q", "j", "ten", "nine", "eight", "seven", "six"];
+const suitArray = ["spades", "hearts", "diamonds", "clubs"];
 let selectedLevel: number = 0;
 let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
+let elapsedTime: number = 0;
+let startTime: number = 0;
 const cardContainer = document.querySelector<HTMLElement>(".grid");
 
 function handleLevelSelection() {
@@ -126,21 +35,28 @@ startButton?.addEventListener("submit", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
     selectedLevel = Number(localStorage.getItem("selectedLevel"));
-
-    if (selectedLevel == 1) {
-        cardClasses = cardClassesLv1;
+    let numCards = 0;
+    if (selectedLevel ==1) {
+        numCards = 18;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
     if (selectedLevel == 2) {
-        cardClasses = cardClassesLv2;
+        numCards = 27;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
     if (selectedLevel == 3) {
-        cardClasses = cardClassesLv3;
+        numCards = 36;
+        cardClasses = generateCards(rankArray, suitArray, numCards);
     }
 
     renderBoard(cardClasses);
     setTimeout(() => {
         closeCards();
+        let timerElement = document.querySelector(".timer") as HTMLElement;
+
+        startTimer(startTime, elapsedTime, timerElement);
     }, 5000);
+
     cardContainer?.addEventListener("click", (event) => {
         const card = event.target as HTMLElement;
         if (
@@ -148,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             !card.classList.contains("open")
         ) {
             openCard(card);
-            checkMatch();
+            checkMatch(startTime, elapsedTime);
         }
     });
 });
@@ -156,27 +72,49 @@ document.addEventListener("DOMContentLoaded", () => {
 const closeCards = () => {
     let cardsElement = document.querySelectorAll(".card");
     cardsElement.forEach((card) => {
-        card.classList.add("close");
+        card.setAttribute('src', '../../../static/img/cart-back.png');
     });
 
     openedCards = [];
 };
 
-const openCard = (card: HTMLElement ) => {
-    card.classList.remove("close");
+const openCard = (card: HTMLElement) => {
+    card.setAttribute('src', `../../../static/img/${card.dataset.value}.png`);
     openedCards.push(card);
 };
-const checkMatch = () => {
+const checkMatch = (startTime: number, elapsedTime: number) => {
     if (openedCards.length === 2) {
         const [firstCard, secondCard] = openedCards;
         if (firstCard.dataset.suit === secondCard.dataset.suit) {
             setTimeout(() => {
-                alert("Вы победили");
+                stopTimer();
+               
             }, 400);
+            const winTimerElement = document.getElementById(
+                "timer"
+            ) as HTMLElement;
+            const gameOverlayElement = document.querySelector(".game-overlay") as HTMLElement
+            showGameOverScreen(winTimerElement, "Вы выиграли!", "game-over-screen", gameOverlayElement  )
+            const gameRestartButton = document.querySelector(".game-over__btn")
+            gameRestartButton?.addEventListener("click", () => {
+                window.location.assign("index.html");
+                selectedLevel = 0;
+            })
         } else {
+            
             setTimeout(() => {
-                alert("Вы проиграли");
+                stopTimer();
             }, 400);
+                const loseTimerElement = document.getElementById(
+                    "timer"
+                ) as HTMLElement;
+                const gameOverlayElement = document.querySelector(".game-overlay") as HTMLElement
+                showGameLoseScreen(loseTimerElement, "Вы проиграли!", "game-over-screen", gameOverlayElement  )
+                const gameRestartButton = document.querySelector(".game-over__btn")
+                gameRestartButton?.addEventListener("click", () => {
+                    window.location.assign("index.html");
+                    selectedLevel = 0;
+                })
         }
     }
 };

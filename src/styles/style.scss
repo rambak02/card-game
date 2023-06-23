@@ -1,9 +1,9 @@
-@import "vars";
+@import url("vars");
 
 @font-face {
-  font-family: "StratosSkyeng";
-  src: url(/assets/fonts/stratosskyengweb-regular.woff) format(woff),
-    url(/assets/fonts/stratosskyengweb-regular.woff2) format(woff2);
+  font-family: StratosSkyeng;
+  src: url("/assets/fonts/stratosskyengweb-regular.woff") format(woff),
+    url("/assets/fonts/stratosskyengweb-regular.woff2") format(woff2);
   font-style: normal;
   font-weight: 400;
 }
@@ -22,6 +22,7 @@
   width: 100vw;
   height: 100vh;
 }
+
 .level {
   &__container {
     width: 480px;
@@ -33,10 +34,11 @@
     align-items: center;
     justify-content: space-evenly;
   }
+
   &__title {
     width: 208px;
     height: 96px;
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng;
     font-size: 38px;
     line-height: 48px;
     text-align: center;
@@ -44,17 +46,18 @@
     font-style: normal;
     font-weight: 400;
   }
+
   &__toolbar {
     display: flex;
     gap: 24px;
-
     font-size: 64px;
     line-height: 72px;
     color: #0080c1;
   }
 }
+
 .level__start {
-  color: #ffffff;
+  color: #fff;
   background: #7ac100;
   border-radius: 12px;
   min-height: 50px;
@@ -64,27 +67,33 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+
   &:hover {
     background-color: #6daa03;
   }
 }
+
 .level__toolbar input[type="radio"] {
   display: none;
 }
+
 .level__toolbar label {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng;
   display: inline-block;
   padding: 20px 40px;
   cursor: pointer;
-  background: #ffffff;
+  background: #fff;
   border-radius: 12px;
 }
-.level__toolbar input[type="radio"]:checked + label {
-  outline: 3px solid #0080c1;
-}
+
 .level__toolbar label:hover {
   outline: 3px solid #0080c1;
 }
 
-@import "game-board";
-@import "mobile";
+.level__toolbar input[type="radio"]:checked + label {
+  outline: 3px solid #0080c1;
+}
+
+@import url("game-board");
+@import url("mobile");
+@import url("game-over");

@@ -1,0 +1,86 @@
+.game-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #004980b3; /* Прозрачный черный цвет для затемнения фона */
+  z-index: 99; /* Высокий z-index для отображения поверх основного контента */
+  display: none;
+}
+
+.game-over__win {
+  width: 96px;
+  height: 96px;
+  background-image: url("../../assets/img/celedration.png");
+}
+
+.game-over__lose {
+  width: 96px;
+  height: 96px;
+  background-image: url("../../assets/img/smile_dead.png");
+}
+
+.game-over__title {
+  color: #004980;
+  height: 48px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.game-overlay__time__title {
+  width: 230px;
+  height: 32px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.game-overlay__time {
+  width: 155px;
+  height: 72px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.game-overlay__btn {
+  background: #7ac100;
+  border-radius: 12px;
+  width: 246px;
+  height: 50px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffff;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-over-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c2f5ff;
+  border-radius: 12px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+}
