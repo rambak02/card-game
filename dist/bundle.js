@@ -25,86 +25,14 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../../../assets/fonts/stratosskyengweb-regular.woff */ "./assets/fonts/stratosskyengweb-regular.woff"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../../../assets/fonts/stratosskyengweb-regular.woff2 */ "./assets/fonts/stratosskyengweb-regular.woff2"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/cart-back.png */ "./assets/img/cart-back.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/a-spades.png */ "./assets/img/a-spades.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/король пики.png */ "./assets/img/король пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/дама пики.png */ "./assets/img/дама пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/валет пики.png */ "./assets/img/валет пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/10 пики.png */ "./assets/img/10 пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/9 пики.png */ "./assets/img/9 пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/8 пики.png */ "./assets/img/8 пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/7 пики.png */ "./assets/img/7 пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/6 пики.png */ "./assets/img/6 пики.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/туз черви.png */ "./assets/img/туз черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/король черви.png */ "./assets/img/король черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/дама черви.png */ "./assets/img/дама черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_15___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/валет черви.png */ "./assets/img/валет черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_16___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/10 черви.png */ "./assets/img/10 черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_17___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/9 черви.png */ "./assets/img/9 черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_18___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/8 черви.png */ "./assets/img/8 черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_19___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/7 черви.png */ "./assets/img/7 черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_20___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/6 черви.png */ "./assets/img/6 черви.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_21___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/туз бубны.png */ "./assets/img/туз бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_22___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/король бубны.png */ "./assets/img/король бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_23___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/дама бубны.png */ "./assets/img/дама бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_24___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/валет бубны.png */ "./assets/img/валет бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_25___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/10 бубны.png */ "./assets/img/10 бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_26___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/9 бубны.png */ "./assets/img/9 бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_27___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/8 бубны.png */ "./assets/img/8 бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_28___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/7 бубны.png */ "./assets/img/7 бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_29___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/6 бубны.png */ "./assets/img/6 бубны.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_30___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/туз крести.png */ "./assets/img/туз крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_31___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/король крести.png */ "./assets/img/король крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_32___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/дама крести.png */ "./assets/img/дама крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_33___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/валет крести.png */ "./assets/img/валет крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_34___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/10 крести.png */ "./assets/img/10 крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_35___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/9 крести.png */ "./assets/img/9 крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_36___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/8 крести.png */ "./assets/img/8 крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_37___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/7 крести.png */ "./assets/img/7 крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_38___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/6 крести.png */ "./assets/img/6 крести.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_39___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/celedration.png */ "./assets/img/celedration.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_40___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/smile_dead.png */ "./assets/img/smile_dead.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/celedration.png */ "./assets/img/celedration.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/img/smile_dead.png */ "./assets/img/smile_dead.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
-var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);
-var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);
-var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);
-var ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_8___);
-var ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);
-var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);
-var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
-var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
-var ___CSS_LOADER_URL_REPLACEMENT_13___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);
-var ___CSS_LOADER_URL_REPLACEMENT_14___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_14___);
-var ___CSS_LOADER_URL_REPLACEMENT_15___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_15___);
-var ___CSS_LOADER_URL_REPLACEMENT_16___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_16___);
-var ___CSS_LOADER_URL_REPLACEMENT_17___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_17___);
-var ___CSS_LOADER_URL_REPLACEMENT_18___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_18___);
-var ___CSS_LOADER_URL_REPLACEMENT_19___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_19___);
-var ___CSS_LOADER_URL_REPLACEMENT_20___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_20___);
-var ___CSS_LOADER_URL_REPLACEMENT_21___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_21___);
-var ___CSS_LOADER_URL_REPLACEMENT_22___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_22___);
-var ___CSS_LOADER_URL_REPLACEMENT_23___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_23___);
-var ___CSS_LOADER_URL_REPLACEMENT_24___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_24___);
-var ___CSS_LOADER_URL_REPLACEMENT_25___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_25___);
-var ___CSS_LOADER_URL_REPLACEMENT_26___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_26___);
-var ___CSS_LOADER_URL_REPLACEMENT_27___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_27___);
-var ___CSS_LOADER_URL_REPLACEMENT_28___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_28___);
-var ___CSS_LOADER_URL_REPLACEMENT_29___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_29___);
-var ___CSS_LOADER_URL_REPLACEMENT_30___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_30___);
-var ___CSS_LOADER_URL_REPLACEMENT_31___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_31___);
-var ___CSS_LOADER_URL_REPLACEMENT_32___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_32___);
-var ___CSS_LOADER_URL_REPLACEMENT_33___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_33___);
-var ___CSS_LOADER_URL_REPLACEMENT_34___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_34___);
-var ___CSS_LOADER_URL_REPLACEMENT_35___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_35___);
-var ___CSS_LOADER_URL_REPLACEMENT_36___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_36___);
-var ___CSS_LOADER_URL_REPLACEMENT_37___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_37___);
-var ___CSS_LOADER_URL_REPLACEMENT_38___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_38___);
-var ___CSS_LOADER_URL_REPLACEMENT_39___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_39___);
-var ___CSS_LOADER_URL_REPLACEMENT_40___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_40___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 @font-face {
@@ -276,152 +204,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.a-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_3___});
-}
-
-.k-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_4___});
-}
-
-.q-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_5___});
-}
-
-.j-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_6___});
-}
-
-.ten-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_7___});
-}
-
-.nine-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_8___});
-}
-
-.eight-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_9___});
-}
-
-.seven-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_10___});
-}
-
-.six-spades {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_11___});
-}
-
-.a-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_12___});
-}
-
-.k-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_13___});
-}
-
-.q-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_14___});
-}
-
-.j-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_15___});
-}
-
-.ten-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_16___});
-}
-
-.nine-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_17___});
-}
-
-.eight-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_18___});
-}
-
-.seven-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_19___});
-}
-
-.six-hearts {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_20___});
-}
-
-.a-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_21___});
-}
-
-.k-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_22___});
-}
-
-.q-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_23___});
-}
-
-.j-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_24___});
-}
-
-.ten-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_25___});
-}
-
-.nine-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_26___});
-}
-
-.eight-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_27___});
-}
-
-.seven-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_28___});
-}
-
-.six-diamonds {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_29___});
-}
-
-.a-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_30___});
-}
-
-.k-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_31___});
-}
-
-.q-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_32___});
-}
-
-.j-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_33___});
-}
-
-.ten-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_34___});
-}
-
-.nine-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_35___});
-}
-
-.eight-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_36___});
-}
-
-.seven-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_37___});
-}
-
-.six-clubs {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_38___});
-}
-
 .close {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+  z-index: 1;
 }
 
 @media (width <= 1024px) {
@@ -443,13 +228,13 @@ body {
 .game-over__win {
   width: 96px;
   height: 96px;
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_39___});
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_3___});
 }
 
 .game-over__lose {
   width: 96px;
   height: 96px;
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_40___});
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_4___});
 }
 
 .game-over__title {
@@ -514,7 +299,7 @@ body {
   padding: 20px;
   font-size: 24px;
   text-align: center;
-}`, "",{"version":3,"sources":["webpack://./../../../../../../../%D0%A0%D0%B0%D0%BC%D0%B0%D0%BB/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/%D0%A0%D0%B0%D0%BC%D0%B0%D0%BB/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B5%D0%BA%D0%BB%D0%B8%D0%BF%D1%81/Project%20js/card%20games/src/styles/style.scss","webpack://./src/styles/style.scss","webpack://./src/styles/_vars.scss","webpack://./src/styles/_game-board.scss","webpack://./src/styles/_mobile.scss","webpack://./src/styles/_game-over.scss"],"names":[],"mappings":"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","sourcesContent":["@charset \"UTF-8\";\n@font-face {\n  font-family: StratosSkyeng;\n  src: url(\"/assets/fonts/stratosskyengweb-regular.woff\") format(woff), url(\"/assets/fonts/stratosskyengweb-regular.woff2\") format(woff2);\n  font-style: normal;\n  font-weight: 400;\n}\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.main {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #004980;\n  width: 100vw;\n  height: 100vh;\n}\n\n.level__container {\n  width: 480px;\n  height: 460px;\n  background: #c2f5ff;\n  border-radius: 12px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.level__title {\n  width: 208px;\n  height: 96px;\n  font-family: StratosSkyeng;\n  font-size: 38px;\n  line-height: 48px;\n  text-align: center;\n  color: #004980;\n  font-style: normal;\n  font-weight: 400;\n}\n.level__toolbar {\n  display: flex;\n  gap: 24px;\n  font-size: 64px;\n  line-height: 72px;\n  color: #0080c1;\n}\n\n.level__start {\n  color: #fff;\n  background: #7ac100;\n  border-radius: 12px;\n  min-height: 50px;\n  min-width: 248px;\n  font-size: 24px;\n  line-height: 32px;\n  border: none;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.level__start:hover {\n  background-color: #6daa03;\n}\n\n.level__toolbar input[type=radio] {\n  display: none;\n}\n\n.level__toolbar label {\n  font-family: StratosSkyeng;\n  display: inline-block;\n  padding: 20px 40px;\n  cursor: pointer;\n  background: #fff;\n  border-radius: 12px;\n}\n\n.level__toolbar label:hover {\n  outline: 3px solid #0080c1;\n}\n\n.level__toolbar input[type=radio]:checked + label {\n  outline: 3px solid #0080c1;\n}\n\nbody {\n  background-color: #004980;\n}\n\n.header {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.timer {\n  margin-top: -14px;\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n  text-align: center;\n}\n.timer__min {\n  padding-left: 38px;\n}\n.timer__sek {\n  padding-right: 5px;\n}\n.timer__container {\n  margin-top: 20px;\n}\n.timer__header {\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 16px;\n  line-height: 32px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\n.restart-btn {\n  display: flex;\n  margin-top: 10px;\n  color: #fff;\n  border: none;\n  cursor: pointer;\n  width: 246px;\n  justify-content: center;\n  align-items: center;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  height: 50px;\n  background: #7ac100;\n  border-radius: 12px;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(9, 1fr);\n  grid-template-rows: repeat(4, 1fr);\n  grid-gap: 10px;\n  margin: auto;\n  width: 70vw;\n  height: 80vh;\n}\n\n.card {\n  cursor: pointer;\n  min-width: 110px;\n  height: 150px;\n  background-color: #f2f2f2;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-image: url(\"../../assets/img/cart-back.png\");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.a-spades {\n  background-image: url(\"../../assets/img/a-spades.png\");\n}\n\n.k-spades {\n  background-image: url(\"../../assets/img/король пики.png\");\n}\n\n.q-spades {\n  background-image: url(\"../../assets/img/дама пики.png\");\n}\n\n.j-spades {\n  background-image: url(\"../../assets/img/валет пики.png\");\n}\n\n.ten-spades {\n  background-image: url(\"../../assets/img/10 пики.png\");\n}\n\n.nine-spades {\n  background-image: url(\"../../assets/img/9 пики.png\");\n}\n\n.eight-spades {\n  background-image: url(\"../../assets/img/8 пики.png\");\n}\n\n.seven-spades {\n  background-image: url(\"../../assets/img/7 пики.png\");\n}\n\n.six-spades {\n  background-image: url(\"../../assets/img/6 пики.png\");\n}\n\n.a-hearts {\n  background-image: url(\"../../assets/img/туз черви.png\");\n}\n\n.k-hearts {\n  background-image: url(\"../../assets/img/король черви.png\");\n}\n\n.q-hearts {\n  background-image: url(\"../../assets/img/дама черви.png\");\n}\n\n.j-hearts {\n  background-image: url(\"../../assets/img/валет черви.png\");\n}\n\n.ten-hearts {\n  background-image: url(\"../../assets/img/10 черви.png\");\n}\n\n.nine-hearts {\n  background-image: url(\"../../assets/img/9 черви.png\");\n}\n\n.eight-hearts {\n  background-image: url(\"../../assets/img/8 черви.png\");\n}\n\n.seven-hearts {\n  background-image: url(\"../../assets/img/7 черви.png\");\n}\n\n.six-hearts {\n  background-image: url(\"../../assets/img/6 черви.png\");\n}\n\n.a-diamonds {\n  background-image: url(\"../../assets/img/туз бубны.png\");\n}\n\n.k-diamonds {\n  background-image: url(\"../../assets/img/король бубны.png\");\n}\n\n.q-diamonds {\n  background-image: url(\"../../assets/img/дама бубны.png\");\n}\n\n.j-diamonds {\n  background-image: url(\"../../assets/img/валет бубны.png\");\n}\n\n.ten-diamonds {\n  background-image: url(\"../../assets/img/10 бубны.png\");\n}\n\n.nine-diamonds {\n  background-image: url(\"../../assets/img/9 бубны.png\");\n}\n\n.eight-diamonds {\n  background-image: url(\"../../assets/img/8 бубны.png\");\n}\n\n.seven-diamonds {\n  background-image: url(\"../../assets/img/7 бубны.png\");\n}\n\n.six-diamonds {\n  background-image: url(\"../../assets/img/6 бубны.png\");\n}\n\n.a-clubs {\n  background-image: url(\"../../assets/img/туз крести.png\");\n}\n\n.k-clubs {\n  background-image: url(\"../../assets/img/король крести.png\");\n}\n\n.q-clubs {\n  background-image: url(\"../../assets/img/дама крести.png\");\n}\n\n.j-clubs {\n  background-image: url(\"../../assets/img/валет крести.png\");\n}\n\n.ten-clubs {\n  background-image: url(\"../../assets/img/10 крести.png\");\n}\n\n.nine-clubs {\n  background-image: url(\"../../assets/img/9 крести.png\");\n}\n\n.eight-clubs {\n  background-image: url(\"../../assets/img/8 крести.png\");\n}\n\n.seven-clubs {\n  background-image: url(\"../../assets/img/7 крести.png\");\n}\n\n.six-clubs {\n  background-image: url(\"../../assets/img/6 крести.png\");\n}\n\n.close {\n  background-image: url(\"../../assets/img/cart-back.png\");\n}\n\n@media (width <= 1024px) {\n  .grid {\n    width: 90vw;\n  }\n}\n.game-overlay {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 73, 128, 0.7019607843); /* Прозрачный черный цвет для затемнения фона */\n  z-index: 99; /* Высокий z-index для отображения поверх основного контента */\n  display: none;\n}\n\n.game-over__win {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/celedration.png\");\n}\n\n.game-over__lose {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/smile_dead.png\");\n}\n\n.game-over__title {\n  color: #004980;\n  height: 48px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 40px;\n  line-height: 48px;\n}\n\n.game-overlay__time__title {\n  width: 230px;\n  height: 32px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n}\n\n.game-overlay__time {\n  width: 155px;\n  height: 72px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n}\n\n.game-overlay__btn {\n  background: #7ac100;\n  border-radius: 12px;\n  width: 246px;\n  height: 50px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  color: white;\n}\n\n.show {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.game-over-screen {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #c2f5ff;\n  border-radius: 12px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 48px;\n  padding: 20px;\n  font-size: 24px;\n  text-align: center;\n}","@import \"vars\";\n\n@font-face {\n  font-family: StratosSkyeng;\n  src: url(\"/assets/fonts/stratosskyengweb-regular.woff\") format(woff),\n    url(\"/assets/fonts/stratosskyengweb-regular.woff2\") format(woff2);\n  font-style: normal;\n  font-weight: 400;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.main {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: $color-background;\n  width: 100vw;\n  height: 100vh;\n}\n\n.level {\n  &__container {\n    width: 480px;\n    height: 460px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-evenly;\n  }\n\n  &__title {\n    width: 208px;\n    height: 96px;\n    font-family: StratosSkyeng;\n    font-size: 38px;\n    line-height: 48px;\n    text-align: center;\n    color: #004980;\n    font-style: normal;\n    font-weight: 400;\n  }\n\n  &__toolbar {\n    display: flex;\n    gap: 24px;\n    font-size: 64px;\n    line-height: 72px;\n    color: #0080c1;\n  }\n}\n\n.level__start {\n  color: #fff;\n  background: #7ac100;\n  border-radius: 12px;\n  min-height: 50px;\n  min-width: 248px;\n  font-size: 24px;\n  line-height: 32px;\n  border: none;\n  cursor: pointer;\n  transition: all 0.3s;\n\n  &:hover {\n    background-color: #6daa03;\n  }\n}\n\n.level__toolbar input[type=\"radio\"] {\n  display: none;\n}\n\n.level__toolbar label {\n  font-family: StratosSkyeng;\n  display: inline-block;\n  padding: 20px 40px;\n  cursor: pointer;\n  background: #fff;\n  border-radius: 12px;\n}\n\n.level__toolbar label:hover {\n  outline: 3px solid #0080c1;\n}\n\n.level__toolbar input[type=\"radio\"]:checked + label {\n  outline: 3px solid #0080c1;\n}\n\n@import \"game-board\";\n@import \"mobile\";\n@import \"game-over\";\n","$color-background: #004980;\n$color-text: #004980;\n","body {\n  background-color: $color-background;\n}\n\n.header {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.timer {\n  margin-top: -14px;\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n  text-align: center;\n\n  &__min {\n    padding-left: 38px;\n  }\n\n  &__sek {\n    padding-right: 5px;\n  }\n\n  &__container {\n    margin-top: 20px;\n  }\n\n  &__header {\n    color: #fff;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 32px;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n}\n\n.restart-btn {\n  display: flex;\n  margin-top: 10px;\n  color: #fff;\n  border: none;\n  cursor: pointer;\n  width: 246px;\n  justify-content: center;\n  align-items: center;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  height: 50px;\n  background: #7ac100;\n  border-radius: 12px;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(9, 1fr);\n  grid-template-rows: repeat(4, 1fr);\n  grid-gap: 10px;\n  margin: auto;\n  width: 70vw;\n  height: 80vh;\n}\n\n.card {\n  cursor: pointer;\n  min-width: 110px;\n  height: 150px;\n  background-color: #f2f2f2;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-image: url(\"../../assets/img/cart-back.png\");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.a-spades {\n  background-image: url(\"../../assets/img/a-spades.png\");\n}\n\n.k-spades {\n  background-image: url(\"../../assets/img/король пики.png\");\n}\n\n.q-spades {\n  background-image: url(\"../../assets/img/дама пики.png\");\n}\n\n.j-spades {\n  background-image: url(\"../../assets/img/валет пики.png\");\n}\n\n.ten-spades {\n  background-image: url(\"../../assets/img/10\\ пики.png\");\n}\n\n.nine-spades {\n  background-image: url(\"../../assets/img/9\\ пики.png\");\n}\n\n.eight-spades {\n  background-image: url(\"../../assets/img/8\\ пики.png\");\n}\n\n.seven-spades {\n  background-image: url(\"../../assets/img/7\\ пики.png\");\n}\n\n.six-spades {\n  background-image: url(\"../../assets/img/6\\ пики.png\");\n}\n\n.a-hearts {\n  background-image: url(\"../../assets/img/туз черви.png\");\n}\n\n.k-hearts {\n  background-image: url(\"../../assets/img/король черви.png\");\n}\n\n.q-hearts {\n  background-image: url(\"../../assets/img/дама черви.png\");\n}\n\n.j-hearts {\n  background-image: url(\"../../assets/img/валет черви.png\");\n}\n\n.ten-hearts {\n  background-image: url(\"../../assets/img/10\\ черви.png\");\n}\n\n.nine-hearts {\n  background-image: url(\"../../assets/img/9\\ черви.png\");\n}\n\n.eight-hearts {\n  background-image: url(\"../../assets/img/8\\ черви.png\");\n}\n\n.seven-hearts {\n  background-image: url(\"../../assets/img/7\\ черви.png\");\n}\n\n.six-hearts {\n  background-image: url(\"../../assets/img/6\\ черви.png\");\n}\n\n.a-diamonds {\n  background-image: url(\"../../assets/img/туз бубны.png\");\n}\n\n.k-diamonds {\n  background-image: url(\"../../assets/img/король бубны.png\");\n}\n\n.q-diamonds {\n  background-image: url(\"../../assets/img/дама бубны.png\");\n}\n\n.j-diamonds {\n  background-image: url(\"../../assets/img/валет бубны.png\");\n}\n\n.ten-diamonds {\n  background-image: url(\"../../assets/img/10\\ бубны.png\");\n}\n\n.nine-diamonds {\n  background-image: url(\"../../assets/img/9\\ бубны.png\");\n}\n\n.eight-diamonds {\n  background-image: url(\"../../assets/img/8\\ бубны.png\");\n}\n\n.seven-diamonds {\n  background-image: url(\"../../assets/img/7\\ бубны.png\");\n}\n\n.six-diamonds {\n  background-image: url(\"../../assets/img/6\\ бубны.png\");\n}\n\n.a-clubs {\n  background-image: url(\"../../assets/img/туз крести.png\");\n}\n\n.k-clubs {\n  background-image: url(\"../../assets/img/король крести.png\");\n}\n\n.q-clubs {\n  background-image: url(\"../../assets/img/дама крести.png\");\n}\n\n.j-clubs {\n  background-image: url(\"../../assets/img/валет крести.png\");\n}\n\n.ten-clubs {\n  background-image: url(\"../../assets/img/10\\ крести.png\");\n}\n\n.nine-clubs {\n  background-image: url(\"../../assets/img/9\\ крести.png\");\n}\n\n.eight-clubs {\n  background-image: url(\"../../assets/img/8\\ крести.png\");\n}\n\n.seven-clubs {\n  background-image: url(\"../../assets/img/7\\ крести.png\");\n}\n\n.six-clubs {\n  background-image: url(\"../../assets/img/6\\ крести.png\");\n}\n\n.close {\n  background-image: url(\"../../assets/img/cart-back.png\");\n}\n","@media (width <= 1024px) {\n  .grid {\n    width: 90vw;\n  }\n}\n",".game-overlay {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: #004980b3; /* Прозрачный черный цвет для затемнения фона */\n  z-index: 99; /* Высокий z-index для отображения поверх основного контента */\n  display: none;\n}\n\n.game-over__win {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/celedration.png\");\n}\n\n.game-over__lose {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/smile_dead.png\");\n}\n\n.game-over__title {\n  color: #004980;\n  height: 48px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 40px;\n  line-height: 48px;\n}\n\n.game-overlay__time__title {\n  width: 230px;\n  height: 32px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n}\n\n.game-overlay__time {\n  width: 155px;\n  height: 72px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n}\n\n.game-overlay__btn {\n  background: #7ac100;\n  border-radius: 12px;\n  width: 246px;\n  height: 50px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  color: #ffff;\n}\n\n.show {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.game-over-screen {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #c2f5ff;\n  border-radius: 12px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 48px;\n  padding: 20px;\n  font-size: 24px;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./../../../../../../../%D0%A0%D0%B0%D0%BC%D0%B0%D0%BB/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/%D0%A0%D0%B0%D0%BC%D0%B0%D0%BB/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B5%D0%BA%D0%BB%D0%B8%D0%BF%D1%81/Project%20js/card%20games/src/styles/style.scss","webpack://./src/styles/style.scss","webpack://./src/styles/_vars.scss","webpack://./src/styles/_game-board.scss","webpack://./src/styles/_mobile.scss","webpack://./src/styles/_game-over.scss"],"names":[],"mappings":"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","sourcesContent":["@charset \"UTF-8\";\n@font-face {\n  font-family: StratosSkyeng;\n  src: url(\"/assets/fonts/stratosskyengweb-regular.woff\") format(woff), url(\"/assets/fonts/stratosskyengweb-regular.woff2\") format(woff2);\n  font-style: normal;\n  font-weight: 400;\n}\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.main {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #004980;\n  width: 100vw;\n  height: 100vh;\n}\n\n.level__container {\n  width: 480px;\n  height: 460px;\n  background: #c2f5ff;\n  border-radius: 12px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n}\n.level__title {\n  width: 208px;\n  height: 96px;\n  font-family: StratosSkyeng;\n  font-size: 38px;\n  line-height: 48px;\n  text-align: center;\n  color: #004980;\n  font-style: normal;\n  font-weight: 400;\n}\n.level__toolbar {\n  display: flex;\n  gap: 24px;\n  font-size: 64px;\n  line-height: 72px;\n  color: #0080c1;\n}\n\n.level__start {\n  color: #fff;\n  background: #7ac100;\n  border-radius: 12px;\n  min-height: 50px;\n  min-width: 248px;\n  font-size: 24px;\n  line-height: 32px;\n  border: none;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.level__start:hover {\n  background-color: #6daa03;\n}\n\n.level__toolbar input[type=radio] {\n  display: none;\n}\n\n.level__toolbar label {\n  font-family: StratosSkyeng;\n  display: inline-block;\n  padding: 20px 40px;\n  cursor: pointer;\n  background: #fff;\n  border-radius: 12px;\n}\n\n.level__toolbar label:hover {\n  outline: 3px solid #0080c1;\n}\n\n.level__toolbar input[type=radio]:checked + label {\n  outline: 3px solid #0080c1;\n}\n\nbody {\n  background-color: #004980;\n}\n\n.header {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.timer {\n  margin-top: -14px;\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n  text-align: center;\n}\n.timer__min {\n  padding-left: 38px;\n}\n.timer__sek {\n  padding-right: 5px;\n}\n.timer__container {\n  margin-top: 20px;\n}\n.timer__header {\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 16px;\n  line-height: 32px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\n.restart-btn {\n  display: flex;\n  margin-top: 10px;\n  color: #fff;\n  border: none;\n  cursor: pointer;\n  width: 246px;\n  justify-content: center;\n  align-items: center;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  height: 50px;\n  background: #7ac100;\n  border-radius: 12px;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(9, 1fr);\n  grid-template-rows: repeat(4, 1fr);\n  grid-gap: 10px;\n  margin: auto;\n  width: 70vw;\n  height: 80vh;\n}\n\n.card {\n  cursor: pointer;\n  min-width: 110px;\n  height: 150px;\n  background-color: #f2f2f2;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-image: url(\"../../assets/img/cart-back.png\");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.close {\n  background-image: url(\"../../assets/img/cart-back.png\");\n  z-index: 1;\n}\n\n@media (width <= 1024px) {\n  .grid {\n    width: 90vw;\n  }\n}\n.game-overlay {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 73, 128, 0.7019607843); /* Прозрачный черный цвет для затемнения фона */\n  z-index: 99; /* Высокий z-index для отображения поверх основного контента */\n  display: none;\n}\n\n.game-over__win {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/celedration.png\");\n}\n\n.game-over__lose {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/smile_dead.png\");\n}\n\n.game-over__title {\n  color: #004980;\n  height: 48px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 40px;\n  line-height: 48px;\n}\n\n.game-overlay__time__title {\n  width: 230px;\n  height: 32px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n}\n\n.game-overlay__time {\n  width: 155px;\n  height: 72px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n}\n\n.game-overlay__btn {\n  background: #7ac100;\n  border-radius: 12px;\n  width: 246px;\n  height: 50px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  color: white;\n}\n\n.show {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.game-over-screen {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #c2f5ff;\n  border-radius: 12px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 48px;\n  padding: 20px;\n  font-size: 24px;\n  text-align: center;\n}","@import \"vars\";\n\n@font-face {\n  font-family: StratosSkyeng;\n  src: url(\"/assets/fonts/stratosskyengweb-regular.woff\") format(woff),\n    url(\"/assets/fonts/stratosskyengweb-regular.woff2\") format(woff2);\n  font-style: normal;\n  font-weight: 400;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.main {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: $color-background;\n  width: 100vw;\n  height: 100vh;\n}\n\n.level {\n  &__container {\n    width: 480px;\n    height: 460px;\n    background: #c2f5ff;\n    border-radius: 12px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-evenly;\n  }\n\n  &__title {\n    width: 208px;\n    height: 96px;\n    font-family: StratosSkyeng;\n    font-size: 38px;\n    line-height: 48px;\n    text-align: center;\n    color: #004980;\n    font-style: normal;\n    font-weight: 400;\n  }\n\n  &__toolbar {\n    display: flex;\n    gap: 24px;\n    font-size: 64px;\n    line-height: 72px;\n    color: #0080c1;\n  }\n}\n\n.level__start {\n  color: #fff;\n  background: #7ac100;\n  border-radius: 12px;\n  min-height: 50px;\n  min-width: 248px;\n  font-size: 24px;\n  line-height: 32px;\n  border: none;\n  cursor: pointer;\n  transition: all 0.3s;\n\n  &:hover {\n    background-color: #6daa03;\n  }\n}\n\n.level__toolbar input[type=\"radio\"] {\n  display: none;\n}\n\n.level__toolbar label {\n  font-family: StratosSkyeng;\n  display: inline-block;\n  padding: 20px 40px;\n  cursor: pointer;\n  background: #fff;\n  border-radius: 12px;\n}\n\n.level__toolbar label:hover {\n  outline: 3px solid #0080c1;\n}\n\n.level__toolbar input[type=\"radio\"]:checked + label {\n  outline: 3px solid #0080c1;\n}\n\n@import \"game-board\";\n@import \"mobile\";\n@import \"game-over\";\n","$color-background: #004980;\n$color-text: #004980;\n","body {\n  background-color: $color-background;\n}\n\n.header {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.timer {\n  margin-top: -14px;\n  color: #fff;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n  text-align: center;\n\n  &__min {\n    padding-left: 38px;\n  }\n\n  &__sek {\n    padding-right: 5px;\n  }\n\n  &__container {\n    margin-top: 20px;\n  }\n\n  &__header {\n    color: #fff;\n    font-family: StratosSkyeng;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 32px;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n  }\n}\n\n.restart-btn {\n  display: flex;\n  margin-top: 10px;\n  color: #fff;\n  border: none;\n  cursor: pointer;\n  width: 246px;\n  justify-content: center;\n  align-items: center;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  height: 50px;\n  background: #7ac100;\n  border-radius: 12px;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(9, 1fr);\n  grid-template-rows: repeat(4, 1fr);\n  grid-gap: 10px;\n  margin: auto;\n  width: 70vw;\n  height: 80vh;\n}\n\n.card {\n  cursor: pointer;\n  min-width: 110px;\n  height: 150px;\n  background-color: #f2f2f2;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-image: url(\"../../assets/img/cart-back.png\");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.close {\n  background-image: url(\"../../assets/img/cart-back.png\");\n  z-index: 1;\n}\n","@media (width <= 1024px) {\n  .grid {\n    width: 90vw;\n  }\n}\n",".game-overlay {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: #004980b3; /* Прозрачный черный цвет для затемнения фона */\n  z-index: 99; /* Высокий z-index для отображения поверх основного контента */\n  display: none;\n}\n\n.game-over__win {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/celedration.png\");\n}\n\n.game-over__lose {\n  width: 96px;\n  height: 96px;\n  background-image: url(\"../../assets/img/smile_dead.png\");\n}\n\n.game-over__title {\n  color: #004980;\n  height: 48px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 40px;\n  line-height: 48px;\n}\n\n.game-overlay__time__title {\n  width: 230px;\n  height: 32px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n}\n\n.game-overlay__time {\n  width: 155px;\n  height: 72px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 64px;\n  line-height: 72px;\n}\n\n.game-overlay__btn {\n  background: #7ac100;\n  border-radius: 12px;\n  width: 246px;\n  height: 50px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 24px;\n  line-height: 32px;\n  color: #ffff;\n}\n\n.show {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.game-over-screen {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: #c2f5ff;\n  border-radius: 12px;\n  font-family: StratosSkyeng;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 48px;\n  padding: 20px;\n  font-size: 24px;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1022,7 +807,7 @@ var renderBoard = function (cardClasses) {
         cardContainer.innerHTML = shuffledCard
             .map(function (cardClass) {
             var _a = cardClass.split("-"), rank = _a[0], suit = _a[1];
-            return "<div  class =\"card ".concat(cardClass, "\" data-suit =\"").concat(suit, "\"></div>");
+            return "<div class =\"card\" data-suit =\"".concat(suit, "\"> <img src=\"../../../static/img/").concat(cardClass, ".png\"></div>");
         })
             .join("");
     }
@@ -1136,216 +921,6 @@ module.exports = __webpack_require__.p + "ce93393e831d32412096.woff2";
 
 /***/ }),
 
-/***/ "./assets/img/10 бубны.png":
-/*!*********************************!*\
-  !*** ./assets/img/10 бубны.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "21bebb7ead641d20bf16.png";
-
-/***/ }),
-
-/***/ "./assets/img/10 крести.png":
-/*!**********************************!*\
-  !*** ./assets/img/10 крести.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "1c57f62f7f0d05a3aad3.png";
-
-/***/ }),
-
-/***/ "./assets/img/10 пики.png":
-/*!********************************!*\
-  !*** ./assets/img/10 пики.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "5d6bd5b37404e8869d07.png";
-
-/***/ }),
-
-/***/ "./assets/img/10 черви.png":
-/*!*********************************!*\
-  !*** ./assets/img/10 черви.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "2e967b00d7c62946729f.png";
-
-/***/ }),
-
-/***/ "./assets/img/6 бубны.png":
-/*!********************************!*\
-  !*** ./assets/img/6 бубны.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "aec2e62eb7f2efee1fe8.png";
-
-/***/ }),
-
-/***/ "./assets/img/6 крести.png":
-/*!*********************************!*\
-  !*** ./assets/img/6 крести.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "fae5f0c27c0bda22d38a.png";
-
-/***/ }),
-
-/***/ "./assets/img/6 пики.png":
-/*!*******************************!*\
-  !*** ./assets/img/6 пики.png ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "d2a29ed795d73f1b2e1a.png";
-
-/***/ }),
-
-/***/ "./assets/img/6 черви.png":
-/*!********************************!*\
-  !*** ./assets/img/6 черви.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "e95b1be90ea840e564e0.png";
-
-/***/ }),
-
-/***/ "./assets/img/7 бубны.png":
-/*!********************************!*\
-  !*** ./assets/img/7 бубны.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "d13deab9acfbb13425a3.png";
-
-/***/ }),
-
-/***/ "./assets/img/7 крести.png":
-/*!*********************************!*\
-  !*** ./assets/img/7 крести.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "a6acc9d9aa33c91068bb.png";
-
-/***/ }),
-
-/***/ "./assets/img/7 пики.png":
-/*!*******************************!*\
-  !*** ./assets/img/7 пики.png ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "5a4132175a71673c3da0.png";
-
-/***/ }),
-
-/***/ "./assets/img/7 черви.png":
-/*!********************************!*\
-  !*** ./assets/img/7 черви.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "6cd8367b948d8038b1f9.png";
-
-/***/ }),
-
-/***/ "./assets/img/8 бубны.png":
-/*!********************************!*\
-  !*** ./assets/img/8 бубны.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "83d9939c04704c81efff.png";
-
-/***/ }),
-
-/***/ "./assets/img/8 крести.png":
-/*!*********************************!*\
-  !*** ./assets/img/8 крести.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "3f414d3ca27481a79d39.png";
-
-/***/ }),
-
-/***/ "./assets/img/8 пики.png":
-/*!*******************************!*\
-  !*** ./assets/img/8 пики.png ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "b9558381f14cf6f92470.png";
-
-/***/ }),
-
-/***/ "./assets/img/8 черви.png":
-/*!********************************!*\
-  !*** ./assets/img/8 черви.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "f628f0a33a5af947c4d7.png";
-
-/***/ }),
-
-/***/ "./assets/img/9 бубны.png":
-/*!********************************!*\
-  !*** ./assets/img/9 бубны.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "4b537fccced268694c4c.png";
-
-/***/ }),
-
-/***/ "./assets/img/9 крести.png":
-/*!*********************************!*\
-  !*** ./assets/img/9 крести.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "1a92cb4a3c8a8630b4d8.png";
-
-/***/ }),
-
-/***/ "./assets/img/9 пики.png":
-/*!*******************************!*\
-  !*** ./assets/img/9 пики.png ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "cbcb8227a03c62963d9b.png";
-
-/***/ }),
-
-/***/ "./assets/img/9 черви.png":
-/*!********************************!*\
-  !*** ./assets/img/9 черви.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "3336ecf175faf4913e28.png";
-
-/***/ }),
-
-/***/ "./assets/img/a-spades.png":
-/*!*********************************!*\
-  !*** ./assets/img/a-spades.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "8e39e8f6190192f729bc.png";
-
-/***/ }),
-
 /***/ "./assets/img/cart-back.png":
 /*!**********************************!*\
   !*** ./assets/img/cart-back.png ***!
@@ -1373,156 +948,6 @@ module.exports = __webpack_require__.p + "ac8c1387472731a5e673.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "20d8a82296db241727e0.png";
-
-/***/ }),
-
-/***/ "./assets/img/валет бубны.png":
-/*!************************************!*\
-  !*** ./assets/img/валет бубны.png ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "6686d60405299e38287d.png";
-
-/***/ }),
-
-/***/ "./assets/img/валет крести.png":
-/*!*************************************!*\
-  !*** ./assets/img/валет крести.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "01a340edcaab15c08559.png";
-
-/***/ }),
-
-/***/ "./assets/img/валет пики.png":
-/*!***********************************!*\
-  !*** ./assets/img/валет пики.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "22604a4f33b5c05869ed.png";
-
-/***/ }),
-
-/***/ "./assets/img/валет черви.png":
-/*!************************************!*\
-  !*** ./assets/img/валет черви.png ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "ab74065fc6d6eac7e976.png";
-
-/***/ }),
-
-/***/ "./assets/img/дама бубны.png":
-/*!***********************************!*\
-  !*** ./assets/img/дама бубны.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "71fee264fd8724fafade.png";
-
-/***/ }),
-
-/***/ "./assets/img/дама крести.png":
-/*!************************************!*\
-  !*** ./assets/img/дама крести.png ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "317b5bf6b05777af8d8f.png";
-
-/***/ }),
-
-/***/ "./assets/img/дама пики.png":
-/*!**********************************!*\
-  !*** ./assets/img/дама пики.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "56ce5a2519bf1825c5d6.png";
-
-/***/ }),
-
-/***/ "./assets/img/дама черви.png":
-/*!***********************************!*\
-  !*** ./assets/img/дама черви.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "3343184636641f8f128d.png";
-
-/***/ }),
-
-/***/ "./assets/img/король бубны.png":
-/*!*************************************!*\
-  !*** ./assets/img/король бубны.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "c49d20a94dc3cc7c650e.png";
-
-/***/ }),
-
-/***/ "./assets/img/король крести.png":
-/*!**************************************!*\
-  !*** ./assets/img/король крести.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "37e4b415d91bccc1c8a5.png";
-
-/***/ }),
-
-/***/ "./assets/img/король пики.png":
-/*!************************************!*\
-  !*** ./assets/img/король пики.png ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "90bd752fd1c3ca7c88f1.png";
-
-/***/ }),
-
-/***/ "./assets/img/король черви.png":
-/*!*************************************!*\
-  !*** ./assets/img/король черви.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "832b7f590ce40e2ecd8c.png";
-
-/***/ }),
-
-/***/ "./assets/img/туз бубны.png":
-/*!**********************************!*\
-  !*** ./assets/img/туз бубны.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "6c90026d6991f2783431.png";
-
-/***/ }),
-
-/***/ "./assets/img/туз крести.png":
-/*!***********************************!*\
-  !*** ./assets/img/туз крести.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "99bc9674c097769d60d6.png";
-
-/***/ }),
-
-/***/ "./assets/img/туз черви.png":
-/*!**********************************!*\
-  !*** ./assets/img/туз черви.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "ac81b81d207a861bd424.png";
 
 /***/ })
 

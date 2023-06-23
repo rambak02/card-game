@@ -12,7 +12,7 @@ export const renderBoard = (cardClasses: string[]) => {
         cardContainer.innerHTML = shuffledCard
             .map((cardClass) => {
                 const [rank, suit] = cardClass.split("-");
-                return `<div  class ="card ${cardClass}" data-suit ="${suit}"></div>`;
+                return `<img src="../../../static/img/${cardClass}.png" data-value="${cardClass}" class ="card" data-suit ="${suit}">`;
             })
             .join("");
     }

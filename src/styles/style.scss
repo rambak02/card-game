@@ -1,4 +1,4 @@
-@import "vars";
+@import url("vars");
 
 @font-face {
   font-family: StratosSkyeng;
@@ -94,6 +94,6 @@
   outline: 3px solid #0080c1;
 }
 
-@import "game-board";
-@import "mobile";
-@import "game-over";
+@import url("game-board");
+@import url("mobile");
+@import url("game-over");

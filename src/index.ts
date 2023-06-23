@@ -72,14 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
 const closeCards = () => {
     let cardsElement = document.querySelectorAll(".card");
     cardsElement.forEach((card) => {
-        card.classList.add("close");
+        card.setAttribute('src', '../../../static/img/cart-back.png');
     });
 
     openedCards = [];
 };
 
 const openCard = (card: HTMLElement) => {
-    card.classList.remove("close");
+    card.setAttribute('src', `../../../static/img/${card.dataset.value}.png`);
     openedCards.push(card);
 };
 const checkMatch = (startTime: number, elapsedTime: number) => {
