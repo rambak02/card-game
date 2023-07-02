@@ -9,9 +9,8 @@
     "start": "webpack-dev-server --open",
     "format": "prettier --write ./src/index.js",
     "lint:ts": "tsc --noEmit",
-    "lint:js": "eslint ./*.js",
     "lint:scss": "stylelint ./**/*.scss",
-    "lint": "npm run lint:js && npm run lint:scss",
+    "lint": "npm run lint:ts && npm run lint:scss",
     "prepare": "husky install"
   },
   "repository": {
