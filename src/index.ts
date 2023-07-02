@@ -4,14 +4,14 @@ import { startTimer, stopTimer } from "./timer";
 import { showGameOverScreen, showGameLoseScreen } from "./showGameScreen";
 const rankArray = ["a", "k", "q", "j", "ten", "nine", "eight", "seven", "six"];
 const suitArray = ["spades", "hearts", "diamonds", "clubs"];
-let selectedLevel: number = 0;
+export let selectedLevel: number = 0;
 let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
 let elapsedTime: number = 0;
 let startTime: number = 0;
 const cardContainer = document.querySelector<HTMLElement>(".grid");
 
-function handleLevelSelection() {
+export function handleLevelSelection() {
     const levelRadio = document.querySelectorAll<HTMLInputElement>(".level");
 
     for (let i = 0; i < levelRadio.length; i++) {

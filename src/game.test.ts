@@ -1,21 +1,18 @@
 const { beforeEach, describe, expect, it } = require("@jest/globals");
-const { openCard } = require("./index")
- 
-describe("openCard", () => {
-  
-  it("should set card src attribute to the corresponding image based on its dataset value", () => {
+import { handleLevelSelection, selectedLevel } from "./index";
 
-    let openedCards: string[] = [];
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.dataset.value = "card1";
+describe("handleLevelSelection", () => {
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <input type="radio" class="level" name="level" value="1" checked>
+      <input type="radio" class="level" name="level" value="2">
+      <input type="radio" class="level" name="level" value="3">
+    `;
+  });
 
-    openCard(card);
+  it("should set the selectedLevel variable based on the checked radio button", () => {
+    handleLevelSelection();
 
- 
-    expect(card.getAttribute("src")).toContain(`../../../static/img/${card.dataset.value}.png`);
-    expect(openedCards).toHaveLength(1);
-    expect(openedCards[0]).toBe(card);
+    expect(selectedLevel).toBe(1);
   });
 });
-
