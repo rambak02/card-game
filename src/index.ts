@@ -9,6 +9,7 @@ let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
 let elapsedTime: number = 0;
 let startTime: number = 0;
+let closingCards = false;
 const cardContainer = document.querySelector<HTMLElement>(".grid");
 
 export function handleLevelSelection() {
@@ -58,13 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     closeCards();
     let timerElement = document.querySelector(".timer") as HTMLElement;
-
+    closingCards = true;
     startTimer(startTime, elapsedTime, timerElement);
   }, 5000);
 
   cardContainer?.addEventListener("click", (event) => {
     const card = event.target as HTMLElement;
-    if (card.classList.contains("card") && !card.classList.contains("open")) {
+    if (card.classList.contains("card") && !card.classList.contains("open") && closingCards === true) {
       openCard(card);
       checkMatch(startTime, elapsedTime);
     }
