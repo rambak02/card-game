@@ -7,8 +7,8 @@ const suitArray = ["spades", "hearts", "diamonds", "clubs"];
 export let selectedLevel: number = 0;
 let cardClasses: string[] = [];
 let openedCards: HTMLElement[] = [];
-let elapsedTime: number = 0;
-let startTime: number = 0;
+const elapsedTime: number = 0;
+const startTime: number = 0;
 let closingCards = false;
 const cardContainer = document.querySelector<HTMLElement>(".grid");
 
@@ -58,22 +58,26 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBoard(cardClasses);
   setTimeout(() => {
     closeCards();
-    let timerElement = document.querySelector(".timer") as HTMLElement;
+    const timerElement = document.querySelector(".timer") as HTMLElement;
     closingCards = true;
     startTimer(startTime, elapsedTime, timerElement);
   }, 5000);
 
   cardContainer?.addEventListener("click", (event) => {
     const card = event.target as HTMLElement;
-    if (card.classList.contains("card") && !card.classList.contains("open") && closingCards === true) {
+    if (
+      card.classList.contains("card") &&
+      !card.classList.contains("open") &&
+      closingCards === true
+    ) {
       openCard(card);
-      checkMatch(startTime, elapsedTime);
+      checkMatch();
     }
   });
 });
 
 const closeCards = () => {
-  let cardsElement = document.querySelectorAll(".card");
+  const cardsElement = document.querySelectorAll(".card");
   cardsElement.forEach((card) => {
     card.setAttribute("src", "../../../static/img/cart-back.png");
   });
@@ -85,7 +89,7 @@ const openCard = (card: HTMLElement) => {
   card.setAttribute("src", `../../../static/img/${card.dataset.value}.png`);
   openedCards.push(card);
 };
-const checkMatch = (startTime: number, elapsedTime: number) => {
+const checkMatch = () => {
   if (openedCards.length === 2) {
     const [firstCard, secondCard] = openedCards;
     if (firstCard.dataset.suit === secondCard.dataset.suit) {

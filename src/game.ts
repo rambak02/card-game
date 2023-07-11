@@ -11,7 +11,7 @@ export const renderBoard = (cardClasses: string[]) => {
   if (cardContainer !== null) {
     cardContainer.innerHTML = shuffledCard
       .map((cardClass) => {
-        const [rank, suit] = cardClass.split("-");
+        const [suit] = cardClass.split("-");
         return `<img src="../../../static/img/${cardClass}.png" data-value="${cardClass}" class ="card" data-suit ="${suit}">`;
       })
       .join("");
@@ -29,7 +29,7 @@ export const generateCards = (
   for (let i = 0; cards.length < numCards; i++) {
     rankIndex = Math.floor(Math.random() * rankArray.length);
     suitIndex = Math.floor(Math.random() * suitArray.length);
-    let card = `${rankArray[rankIndex]}-${suitArray[suitIndex]}`;
+    const card = `${rankArray[rankIndex]}-${suitArray[suitIndex]}`;
 
     if (!cards.includes(card)) {
       cards.push(card);
