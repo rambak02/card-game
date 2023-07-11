@@ -801,7 +801,7 @@ var renderBoard = function (cardClasses) {
     if (cardContainer !== null) {
         cardContainer.innerHTML = shuffledCard
             .map(function (cardClass) {
-            var _a = cardClass.split("-"), rank = _a[0], suit = _a[1];
+            var suit = cardClass.split("-")[0];
             return "<img src=\"../../../static/img/".concat(cardClass, ".png\" data-value=\"").concat(cardClass, "\" class =\"card\" data-suit =\"").concat(suit, "\">");
         })
             .join("");
@@ -1157,9 +1157,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000);
     cardContainer === null || cardContainer === void 0 ? void 0 : cardContainer.addEventListener("click", function (event) {
         var card = event.target;
-        if (card.classList.contains("card") && !card.classList.contains("open") && closingCards === true) {
+        if (card.classList.contains("card") &&
+            !card.classList.contains("open") &&
+            closingCards === true) {
             openCard(card);
-            checkMatch(startTime, elapsedTime);
+            checkMatch();
         }
     });
 });
@@ -1174,7 +1176,7 @@ var openCard = function (card) {
     card.setAttribute("src", "../../../static/img/".concat(card.dataset.value, ".png"));
     openedCards.push(card);
 };
-var checkMatch = function (startTime, elapsedTime) {
+var checkMatch = function () {
     if (openedCards.length === 2) {
         var firstCard = openedCards[0], secondCard = openedCards[1];
         if (firstCard.dataset.suit === secondCard.dataset.suit) {

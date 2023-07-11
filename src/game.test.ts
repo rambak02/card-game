@@ -1,4 +1,4 @@
-const { beforeEach, describe, expect, it } = require("@jest/globals");
+import { beforeEach, describe, expect, it } from "@jest/globals";
 import { handleLevelSelection, selectedLevel } from "./index";
 
 describe("handleLevelSelection", () => {
